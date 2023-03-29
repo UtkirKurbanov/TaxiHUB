@@ -1,0 +1,99 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html    {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    background: url(images/background01.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7%;
+    align-items: center;
+}
+
+.header a   {
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header a > span    {
+    color: #ffc61a;
+}
+
+.header .navbar a   {
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    background-color: #ffc61a;
+    padding: .5rem 3rem;
+    border-radius: 15px;
+}
+
+#menu-bars  {
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+}
+
+.navbar.active  {
+    top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    html    {
+        font-size: 50%;
+    }
+    #menu-bars  {
+        display: initial;
+    }
+    .navbar {
+       position: absolute;
+       top: -100%;
+       left: 0;
+       right: 0;
+    }
+    .navbar a   {
+        display: block;
+        font-size: 1.5rem;
+        background: #ffc61a;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .header {
+        padding: 2rem;
+    }
+}
